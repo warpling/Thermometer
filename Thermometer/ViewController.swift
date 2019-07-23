@@ -51,13 +51,13 @@ class ViewController: UIViewController {
             detailsLabel.text = "Cool as a room temperature cucumber."
         case .fair:
             fireLabel.text = "🔥"
-            detailsLabel.text = "The device is hot. Performance is probably not impacted."
+            detailsLabel.text = "Your device is hot. Performance is probably not impacted."
         case .serious:
             fireLabel.text = "🔥🔥"
-            detailsLabel.text = "The device is SERIOUSLY hot. Performance may be impacted."
+            detailsLabel.text = "Your device is SERIOUSLY hot. Performance may be impacted."
         case .critical:
             fireLabel.text = "🔥🔥🔥"
-            detailsLabel.text = "The device is CRITICALLY hot. Performance is being impacted."
+            detailsLabel.text = "Your device is CRITICALLY hot. Performance is being impacted."
         }
 
         fireLabel.sizeToFit()
