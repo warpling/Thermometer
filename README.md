@@ -14,7 +14,7 @@ Because I'm tired of wondering if my animations are slow or if my device is just
 
 ## FAQ
 #### Omg will you turn this into [Blackbox](https://itunes.apple.com/us/app/blackbox-think-outside-box/id962969578) challenge??
-Try to imagine some of the things the average person would try to do with their device if this was a challenge… Now remember that 50% of people are stupider than that person.
+Try to imagine some of the things the median person would try to do with their device if this was a challenge… Now remember that 50% of people are stupider than that person.
 
 #### Can you make it say the actual temperature like [that time you turned the iPhone into a digital scale](https://medium.com/swlh/turning-the-iphone-6s-into-a-digital-scale-f2197dc2b6e7)??
 I wish but it's not possible until Apple releases a warmth based equivalent for 3D Touch. 🤞
