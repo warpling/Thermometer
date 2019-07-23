@@ -46,6 +46,9 @@ class ViewController: UIViewController {
 
     @objc public func update() {
         switch ProcessInfo().thermalState {
+        case .nominal:
+            fireLabel.text = "🥒"
+            detailsLabel.text = "Cool as a room temperature cucumber."
         case .fair:
             fireLabel.text = "🔥"
             detailsLabel.text = "The device is hot. Performance is probably not impacted."
@@ -55,9 +58,6 @@ class ViewController: UIViewController {
         case .critical:
             fireLabel.text = "🔥🔥🔥"
             detailsLabel.text = "The device is CRITICALLY hot. Performance is being impacted."
-        default:
-            fireLabel.text = "🥒"
-            detailsLabel.text = "Cool as a room temperature cucumber."
         }
 
         fireLabel.sizeToFit()
