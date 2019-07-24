@@ -44,6 +44,21 @@ class ViewController: UIViewController {
         update()
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            view.backgroundColor = UIColor.black
+            detailsLabel.textColor = UIColor.white
+        case .light, .unspecified:
+            fallthrough
+        @unknown default:
+            view.backgroundColor = UIColor(white: 0.9, alpha: 1)
+            detailsLabel.textColor = UIColor.black
+        }
+
+    }
+
     @objc public func update() {
         switch ProcessInfo().thermalState {
         case .nominal:
@@ -58,6 +73,9 @@ class ViewController: UIViewController {
         case .critical:
             fireLabel.text = "🔥🔥🔥"
             detailsLabel.text = "Your device is CRITICALLY hot. Performance is being impacted."
+        @unknown default:
+            fireLabel.text = "❓"
+            detailsLabel.text = "Thermal state unknown…"
         }
 
         fireLabel.sizeToFit()
