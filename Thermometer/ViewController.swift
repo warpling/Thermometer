@@ -18,8 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         fireLabel.font = UIFont.systemFont(ofSize: 96)
+        fireLabel.textAlignment = .center
 
         detailsLabel.textColor = UIColor.white
+        detailsLabel.textAlignment = .center
         detailsLabel.numberOfLines = 0
 
         stack.axis = .vertical
