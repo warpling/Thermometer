@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17DFB0682300A7B90087A1CC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DFB0672300A7B90087A1CC /* NotificationCenter.framework */; };
+		17DFB06B2300A7B90087A1CC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DFB06A2300A7B90087A1CC /* TodayViewController.swift */; };
+		17DFB06E2300A7B90087A1CC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DFB06C2300A7B90087A1CC /* MainInterface.storyboard */; };
+		17DFB0722300A7B90087A1CC /* Today Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17DFB0652300A7B90087A1CC /* Today Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DC08F59B22E74E8A00CB8CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08F59A22E74E8A00CB8CAF /* AppDelegate.swift */; };
 		DC08F59D22E74E8A00CB8CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08F59C22E74E8A00CB8CAF /* SceneDelegate.swift */; };
 		DC08F59F22E74E8A00CB8CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08F59E22E74E8A00CB8CAF /* ViewController.swift */; };
@@ -15,7 +19,36 @@
 		DC08F5A722E74E8D00CB8CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC08F5A522E74E8D00CB8CAF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		17DFB0702300A7B90087A1CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC08F58F22E74E8A00CB8CAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17DFB0642300A7B90087A1CC;
+			remoteInfo = "Today Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17DFB0732300A7B90087A1CC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				17DFB0722300A7B90087A1CC /* Today Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		17DFB0652300A7B90087A1CC /* Today Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DFB0672300A7B90087A1CC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		17DFB06A2300A7B90087A1CC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		17DFB06D2300A7B90087A1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		17DFB06F2300A7B90087A1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC08F59722E74E8A00CB8CAF /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC08F59A22E74E8A00CB8CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC08F59C22E74E8A00CB8CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +60,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17DFB0622300A7B90087A1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DFB0682300A7B90087A1CC /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC08F59422E74E8A00CB8CAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17DFB0662300A7B90087A1CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17DFB0672300A7B90087A1CC /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17DFB0692300A7B90087A1CC /* Today Widget */ = {
+			isa = PBXGroup;
+			children = (
+				17DFB06A2300A7B90087A1CC /* TodayViewController.swift */,
+				17DFB06C2300A7B90087A1CC /* MainInterface.storyboard */,
+				17DFB06F2300A7B90087A1CC /* Info.plist */,
+			);
+			path = "Today Widget";
+			sourceTree = "<group>";
+		};
 		DC08F58E22E74E8A00CB8CAF = {
 			isa = PBXGroup;
 			children = (
 				DC08F59922E74E8A00CB8CAF /* Thermometer */,
+				17DFB0692300A7B90087A1CC /* Today Widget */,
+				17DFB0662300A7B90087A1CC /* Frameworks */,
 				DC08F59822E74E8A00CB8CAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				DC08F59722E74E8A00CB8CAF /* Thermometer.app */,
+				17DFB0652300A7B90087A1CC /* Today Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +132,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		17DFB0642300A7B90087A1CC /* Today Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17DFB0762300A7B90087A1CC /* Build configuration list for PBXNativeTarget "Today Widget" */;
+			buildPhases = (
+				17DFB0612300A7B90087A1CC /* Sources */,
+				17DFB0622300A7B90087A1CC /* Frameworks */,
+				17DFB0632300A7B90087A1CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Widget";
+			productName = "Today Widget";
+			productReference = 17DFB0652300A7B90087A1CC /* Today Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DC08F59622E74E8A00CB8CAF /* Thermometer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC08F5AB22E74E8D00CB8CAF /* Build configuration list for PBXNativeTarget "Thermometer" */;
@@ -77,10 +156,12 @@
 				DC08F59322E74E8A00CB8CAF /* Sources */,
 				DC08F59422E74E8A00CB8CAF /* Frameworks */,
 				DC08F59522E74E8A00CB8CAF /* Resources */,
+				17DFB0732300A7B90087A1CC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				17DFB0712300A7B90087A1CC /* PBXTargetDependency */,
 			);
 			name = Thermometer;
 			productName = Thermometer;
@@ -97,6 +178,9 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Grow Pixel";
 				TargetAttributes = {
+					17DFB0642300A7B90087A1CC = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					DC08F59622E74E8A00CB8CAF = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -116,11 +200,20 @@
 			projectRoot = "";
 			targets = (
 				DC08F59622E74E8A00CB8CAF /* Thermometer */,
+				17DFB0642300A7B90087A1CC /* Today Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		17DFB0632300A7B90087A1CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DFB06E2300A7B90087A1CC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC08F59522E74E8A00CB8CAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +227,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		17DFB0612300A7B90087A1CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DFB06B2300A7B90087A1CC /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC08F59322E74E8A00CB8CAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,7 +247,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		17DFB0712300A7B90087A1CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17DFB0642300A7B90087A1CC /* Today Widget */;
+			targetProxy = 17DFB0702300A7B90087A1CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		17DFB06C2300A7B90087A1CC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17DFB06D2300A7B90087A1CC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		DC08F5A022E74E8A00CB8CAF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +283,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		17DFB0742300A7B90087A1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVBMY6T275;
+				INFOPLIST_FILE = "Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.growpixel.blackbox.store.Thermometer.Today-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17DFB0752300A7B90087A1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVBMY6T275;
+				INFOPLIST_FILE = "Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.growpixel.blackbox.store.Thermometer.Today-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DC08F5A922E74E8D00CB8CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,6 +438,7 @@
 		DC08F5AC22E74E8D00CB8CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JVBMY6T275;
@@ -301,6 +457,7 @@
 		DC08F5AD22E74E8D00CB8CAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JVBMY6T275;
@@ -319,6 +476,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17DFB0762300A7B90087A1CC /* Build configuration list for PBXNativeTarget "Today Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DFB0742300A7B90087A1CC /* Debug */,
+				17DFB0752300A7B90087A1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC08F59222E74E8A00CB8CAF /* Build configuration list for PBXProject "Thermometer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
