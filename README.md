@@ -11,6 +11,8 @@ Because I'm tired of wondering if my animations are slow or if my device is just
 | `.serious` | 🔥🔥 | Your device is hot and performance is probably throttled. |
 | `.critical` | 🔥🔥🔥 | Your device hurts to hold in places and performance is definitely being throttled. |
 
+## Today widget
+For easy temperature checking add the Today Widget (PR by @SunburstEnzo)!
 
 ## FAQ
 #### Omg will you turn this into [Blackbox](https://itunes.apple.com/us/app/blackbox-think-outside-box/id962969578) challenge??
