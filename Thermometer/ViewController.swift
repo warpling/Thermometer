@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     let stack = UIStackView()
     let fireLabel = UILabel()
@@ -17,10 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fireLabel.font = UIFont.systemFont(ofSize: 96)
+        fireLabel.font = .systemFont(ofSize: 96)
         fireLabel.textAlignment = .center
 
-        detailsLabel.textColor = UIColor.white
+		detailsLabel.textColor = .label
         detailsLabel.textAlignment = .center
         detailsLabel.numberOfLines = 0
 
@@ -51,17 +51,15 @@ class ViewController: UIViewController {
         switch traitCollection.userInterfaceStyle {
         case .dark:
             view.backgroundColor = UIColor.black
-            detailsLabel.textColor = UIColor.white
         case .light, .unspecified:
             fallthrough
         @unknown default:
             view.backgroundColor = UIColor(white: 0.9, alpha: 1)
-            detailsLabel.textColor = UIColor.black
         }
-
     }
 
     @objc public func update() {
+		
         switch ProcessInfo().thermalState {
         case .nominal:
             fireLabel.text = "🥒"
@@ -81,6 +79,6 @@ class ViewController: UIViewController {
         }
 
         fireLabel.sizeToFit()
+		view.setNeedsLayout()
     }
 }
-
