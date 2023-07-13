@@ -21,7 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        if let vc = UIApplication.shared.keyWindow?.rootViewController as? ViewController {
+        if let vc = UIApplication.shared.windows.first?.rootViewController as? ViewController {
+            vc.update()
+        }
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        if let vc = UIApplication.shared.windows.first?.rootViewController as? ViewController {
             vc.update()
         }
     }
